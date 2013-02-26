@@ -1,4 +1,4 @@
-# Copy and paste the following to ad behaviour to the demo-dummy:
+# Copy and paste the following to add behaviour to the demo-dummy:
 
 
     hoodie.store.on('add:task', function(object) {
