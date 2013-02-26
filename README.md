@@ -1,6 +1,6 @@
 # Copy and paste the following to add behaviour to the demo-dummy:
 
-    var hoodie  = new Hoodie("http://api.yourAppNameHere.dev");
+    var hoodie  = new Hoodie("http://api.appjs.dev");
 
     hoodie.store.on('add:task', function(object) {
       $('.taskList').append('<li>'+object.desc+'</li>');
