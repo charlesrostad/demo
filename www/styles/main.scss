@@ -1,0 +1,17 @@
+@import "compass_twitter_bootstrap";
+
+body{
+  background: url('../assets/pattern_130.gif');
+}
+
+.welcome{
+  margin-right: 20px;
+}
+
+.shareList, .resendPassword{
+  display: none;
+}
+
+.addTask{
+  margin-top: 50px;
+}
