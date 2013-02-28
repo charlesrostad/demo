@@ -17,7 +17,7 @@
         var username = $('.signUp .username').val();
         var password = $('.signUp .password').val();
         hoodie.account.signUp(username, password).done(function(object){
-            $('#hoodieAccountModal').modal('hide');
+            $('#modal').modal('hide');
             $('.welcome').text('Hello, '+hoodie.account.username);
         });
     });
