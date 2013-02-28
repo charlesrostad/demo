@@ -27,9 +27,16 @@
         var username = $('.signIn .username').val();
         var password = $('.signIn .password').val();
         hoodie.account.signIn(username, password).done(function(object){
-            $('#hoodieAccountModal').modal('hide');
+            $('#modal').modal('hide');
             $('.welcome').text('Hello, '+hoodie.account.username);
         });
+    });
+
+    hoodie.store.findAll('task').done(function(tasks){
+      $('.taskList').empty()
+      tasks.forEach( function( task ){
+        $('.taskList').append('<li>'+task.desc+'</li>');
+      });
     });
 
 
